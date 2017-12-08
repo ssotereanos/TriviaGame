@@ -1,13 +1,13 @@
 body {
 	font-family: 'Lato', sans-serif;
-	background-image: url('../images/img2.jpg');
+	background-image: url('../images/pattern.jpg');
    
 }
 
 .startGame {
 	position: center;
-	width:70px;
-	color:purple;
+	width:90px;
+	color:grey;
 }
 
 #page {
@@ -16,16 +16,16 @@ height:200px;
 
 
 h1 {
-text-align:center;
-color:purple;
-font-size:100px;
+text-align:left;
+color:grey;
+font-size:60px;
 height:80px;
 }
 
 #quiz {
 	display:center;
 	margin-left: 10px;
-	background: #d2def2;
+	background: grey;
 	padding: 10px 20px 10px 20px;
 	width: 400px;
 	border-radius: 20px;
@@ -48,7 +48,7 @@ input {
 
 
 #button {
-	background: green;
+	background: pink;
 	border: none;
 	border-radius: 5px;
 	padding: 10px;

@@ -51,10 +51,10 @@ function check(){
 var question1 = document.quiz.question1.value;
 var question2 = document.quiz.question2.value;
 var question3 = document.quiz.question3.value;
-var correct = 0 
+var correct = 0;
 
 
-    if(question1 == "Cascading Style Sheet") {
+    if(question1 == "Cascading Style Sheets") {
     correct ++;
      }
 
@@ -65,34 +65,29 @@ var correct = 0
      if(question3 == "Javascript Object Notation"){
       correct ++}
 
-
+var pictures = ["assets/images/win.gif", "assets/images/meh.jpeg", "assets/images/lose.gif"];
 var messages = ["Great job!", "That's just okay", "you really need to do better"];
-var range;
+var score;
 
+  if (correct == 0) {
+    score = 2;
+  }
 
-if (correct < 1){
-   range =2;
-}
-if (correct > 0 && correct < 3){
-   range=1;
-}
-if (correct > 2) {
-   range = 0;
-}
+  if (correct > 0 && correct < 3) {
+    score = 1;
+  }
 
- $("#button").on("click", function (){
- correct.show();
-		console.log('hello');
-$("#number_correct").append =("You got" + correct + "correct.");
-$("#message").append(messages)
+  if (correct == 3) {
+    score = 0;
+  }
 
-});
+  document.getElementById("after_submit").style.visibility = "visible";
 
-// when the start button clicked, the div with the questions that was hidden is shown
- 
-		
-
-}
+  document.getElementById("message").innerHTML = messages[score];
+  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+  document.getElementById("picture").src = pictures[score];
+  }
+  
 }
 
 });
