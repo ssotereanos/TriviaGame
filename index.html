@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Trivia!</title>
+<link rel="stylesheet" href="assets/css/style.css">
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type='text/javascript' src='assets/javascript/app.js'></script> 
+
+</head>
+
+
+<body>
+
+<div id ="page">
+<h1>Totally Trivial Trivia!</h1>
+
+
+
+<button class='startGame'>Start!</button>
+
+</div>
+
+
+<form id = "quiz" name = "quiz">
+
+<div class='timer' id='timeLeft'>
+<h2>0 seconds</h2>
+</div>
+
+
+<p class = "questions">What does CSS stand for ?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">What does HTML stand for?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Hypertext Markup Language"> Hypertext Markup Language<br>
+<input type = "radio" id = "mc" name = "question2" value = "Heartford Markup Language"> Heartford Markup Language<br>
+
+<p class = "questions">What does JSON stand for?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Javascript Object Notation"> Javascript Object Notation<br>
+<input type = "radio" id = "mc" name = "question3" value = "Jason's Object Notation"> Jason's Object Notation<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>
+
+
+
